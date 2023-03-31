@@ -1,0 +1,29 @@
+* {
+    font-family: var(--font);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
