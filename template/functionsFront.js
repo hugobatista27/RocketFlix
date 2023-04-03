@@ -17,3 +17,4 @@ export function insertMovie(obj) {
 
     descriptionArea.innerHTML = `<p>${obj.overview}</p>`
 }
+

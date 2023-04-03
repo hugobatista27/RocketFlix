@@ -4,6 +4,7 @@
 @import url('./styles/desktop.css');
 
 @import url('./styles/global.css');
+@import url('./styles/movieOptions.css');
 
 :root {
     --font: 'Poppins', sans-serif;
@@ -107,8 +108,7 @@ header > img {
     gap: 26px;
     text-align: center;
 }
-
-.actions > button {
+.actions #findMovie {
     width: 180px;
     height: 47px;
     gap: 17px;
@@ -122,8 +122,12 @@ header > img {
     font-weight: 700;
 }
 
-.actions > button:hover {
+.actions #findMovie:hover {
+    transition: .2s;
     cursor: pointer;
+    font-size: 14px;
+    gap: 5px;
+
     background-color: #ffffff;
     border: 2px solid #1A1A1A;
     transform: scale(1.01);
@@ -131,6 +135,25 @@ header > img {
     color: #1E46A3;
 }
 
-.actions > p {
+.actions .movieOptions {
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #0f0f0f49;
+
+    color: rgb(253, 253, 253);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.actions .movieOptions:hover {
+    transition: .2s;
+    transform: scale(1.1);
+    border-color: #C12A23;
+}
+
+.actions p {
+    max-width: 500px;
     font-size: 12px;
 }
