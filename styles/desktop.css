@@ -15,4 +15,21 @@
     header > h1 {
         font-size: 40px;
     }
+
+    .popUpFilterMovies {
+        width: 520px;
+        min-height: 300px;
+    
+    }
+
+    .gridFilter {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 20px;
+    }
+
+    .gridFilter > label {
+        font-size: 0.8rem;
+
+    }
 }

@@ -2,9 +2,6 @@
     box-sizing: border-box;
     padding: 15px;
     position: absolute;
-    
-    width: 520px;
-    min-height: 300px;
 
     border: 2px solid black;
     border-radius: 20px;
@@ -38,8 +35,6 @@
 
 .gridFilter {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
 
     margin-top: 15px;
 }
@@ -48,8 +43,6 @@
     box-sizing: border-box;
 
     text-align: center;
-    font-weight: 400;
-    font-size: 0.8rem;
     
     padding: 10px;
     border-radius: 10px;

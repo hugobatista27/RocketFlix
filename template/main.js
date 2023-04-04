@@ -1,8 +1,15 @@
 import {getByRamdonId} from './routes.js'
-import { filter } from './filters.js'
+import { filter, selectMoviesType } from './filters.js'
 
 const buttonfindMovie = document.getElementById('findMovie')
-buttonfindMovie.addEventListener('click', () => { getByRamdonId() })
+buttonfindMovie.addEventListener('click', () => { 
+    selectMoviesType();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+
+})
 
 
 
@@ -10,7 +17,13 @@ buttonfindMovie.addEventListener('click', () => { getByRamdonId() })
 const movieOptions = document.getElementById('movieOptions')
 const filterOptions = document.getElementById('popUpFilterMovies')
 
-movieOptions.addEventListener('click', () => changeDisplay(filterOptions))
+movieOptions.addEventListener('click', () => {
+    changeDisplay(filterOptions)
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+})
 
 const closePopuUp = document.getElementById('closePopUp')
 closePopuUp.addEventListener('click', () => changeDisplay(filterOptions))
